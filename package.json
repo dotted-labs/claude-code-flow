@@ -1,6 +1,6 @@
 {
   "name": "@dotted-labs/claude-code-flow",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "A CLI tool to initialize DL Agentic Workflow for Claude Code",
   "main": "dist/index.js",
   "bin": {
