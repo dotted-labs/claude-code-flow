@@ -1,11 +1,29 @@
 {
-  "name": "claude-code-flow",
-  "version": "0.1.1",
+  "name": "@dotted-labs/claude-code-flow",
+  "version": "0.1.2",
   "description": "A CLI tool to initialize DL Agentic Workflow for Claude Code",
   "main": "dist/index.js",
   "bin": {
     "claude-code-flow": "dist/cli.js"
   },
+  "author": "Dotted Labs <info@dottedlabs.dev>",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dotted-labs/claude-code-flow.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dotted-labs/claude-code-flow/issues"
+  },
+  "homepage": "https://github.com/dotted-labs/claude-code-flow",
+  "keywords": [
+    "claude-code",
+    "cli",
+    "workflow",
+    "agents",
+    "mcp"
+  ],
+  "license": "MIT",
   "type": "commonjs",
   "files": [
     "dist",
@@ -19,15 +37,6 @@
     "lint": "eslint src --ext .ts",
     "prepublishOnly": "npm run build"
   },
-  "keywords": [
-    "claude-code",
-    "cli",
-    "workflow",
-    "agents",
-    "mcp"
-  ],
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "@types/fs-extra": "^11.0.4",
     "@types/node": "^18.0.0",
