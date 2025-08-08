@@ -1,0 +1,20 @@
+{
+  "mcpServers": {
+    "dl-workflow": {
+      "name": "dl-workflow",
+      "command": "npx",
+      "args": ["@dl/workflow-server"],
+      "env": {
+        "DL_WORKFLOW_MODE": "production"
+      }
+    },
+    "dl-agents": {
+      "name": "dl-agents",
+      "command": "node",
+      "args": ["./node_modules/@dl/agents/dist/server.js"],
+      "env": {
+        "DL_AGENT_CONFIG": ".claude/agents"
+      }
+    }
+  }
+}
