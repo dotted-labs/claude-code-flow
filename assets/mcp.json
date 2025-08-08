@@ -1,20 +1,38 @@
 {
   "mcpServers": {
-    "dl-workflow": {
-      "name": "dl-workflow",
+    "nx-mcp": {
       "command": "npx",
-      "args": ["@dl/workflow-server"],
-      "env": {
-        "DL_WORKFLOW_MODE": "production"
-      }
+      "args": ["-y", "nx-mcp@latest", "."]
     },
-    "dl-agents": {
-      "name": "dl-agents",
-      "command": "node",
-      "args": ["./node_modules/@dl/agents/dist/server.js"],
-      "env": {
-        "DL_AGENT_CONFIG": ".claude/agents"
-      }
+    "context7": {
+      "url": "https://mcp.context7.com/mcp"
+    },
+    "angular-cli": {
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@angular/cli@latest", "mcp"]
+    },
+    "sequential-thinking": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": [
+        "/c",
+        "npx",
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ],
+      "env": {}
+    },
+    "magic": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@21st-dev/magic"],
+      "env": {}
+    },
+    "playwright": {
+      "type": "stdio",
+      "command": "cmd",
+      "args": ["/c", "npx", "-y", "@playwright/mcp@latest"],
+      "env": {}
     }
   }
 }
