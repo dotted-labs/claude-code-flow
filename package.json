@@ -1,6 +1,6 @@
 {
   "name": "claude-code-flow",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI tool to initialize DL Agentic Workflow for Claude Code",
   "main": "dist/index.js",
   "bin": {
